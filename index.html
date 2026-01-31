@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PR ENTERPRISES | Professional Security & Manpower Solutions</title>
+
+<meta name="description" content="PR ENTERPRISES provides professional security, guards, manpower, housekeeping and facility management services across India.">
+<meta name="keywords" content="security agency, security guards, manpower services, housekeeping, bouncer security, PR Enterprises Rewari">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#0b0f16;color:#222;line-height:1.6;scroll-behavior:smooth}
+a{text-decoration:none}
+img{max-width:100%;display:block}
+
+:root{
+--green:#1db954;
+--dark:#0b1320;
+--navy:#0f1724;
+--light:#f4f7fb;
+}
+
+header{background:var(--dark);position:fixed;width:100%;z-index:999}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 50px}
+.logo{color:var(--green);font-weight:700;font-size:22px}
+.nav ul{display:flex;gap:30px;list-style:none}
+.nav a{color:#fff;font-size:14px}
+.menu-btn{display:none;color:#fff;font-size:24px}
+
+.hero{margin-top:70px;height:92vh;position:relative;overflow:hidden}
+.slide{position:absolute;width:100%;height:100%;opacity:0;transition:opacity 1s}
+.slide.active{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;filter:brightness(40%)}
+.hero-box{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;text-align:center;width:90%}
+.hero-box h1{font-size:48px;margin-bottom:15px}
+.hero-box p{font-size:18px;margin-bottom:25px;color:#ddd}
+
+.btn{background:var(--green);color:#fff;padding:13px 28px;border-radius:6px;display:inline-block;font-weight:600}
+
+.section{padding:90px 50px;background:var(--light)}
+.section.dark{background:var(--navy);color:#fff}
+.section h2{text-align:center;font-size:36px;margin-bottom:50px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+
+.card{background:#fff;border-radius:12px;padding:28px;box-shadow:0 10px 25px rgba(0,0,0,0.08);transition:.35s}
+.card:hover{transform:translateY(-8px)}
+.card i{font-size:30px;color:var(--green);margin-bottom:14px}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+form input,form textarea,form select{width:100%;padding:13px;border:1px solid #ccc;border-radius:8px;margin-bottom:14px;font-family:Poppins}
+
+footer{background:var(--dark);color:#aaa;padding:40px 20px;text-align:center}
+
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px}
+
+@media(max-width:768px){
+.nav{padding:14px 20px}
+.nav ul{display:none;position:absolute;background:var(--dark);top:60px;left:0;width:100%;flex-direction:column;padding:20px}
+.nav ul.show{display:flex}
+.menu-btn{display:block}
+.hero-box h1{font-size:32px}
+.section{padding:70px 20px}
+.contact{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">PR ENTERPRISES</div>
+<i class="fa fa-bars menu-btn" onclick="toggleMenu()"></i>
+<ul id="menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#manpower">Manpower</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="slide active"><img src="https://images.unsplash.com/photo-1581093458791-9d09c2f5a5a1"></div>
+<div class="slide"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be"></div>
+<div class="slide"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"></div>
+
+<div class="hero-box">
+<h1>Professional Security & Manpower Solutions</h1>
+<p>Integrated, compliant and performance-driven protection services</p>
+<a href="#contact" class="btn">Get Free Consultation</a>
+</div>
+</section>
+
+<section class="section dark" id="services">
+<h2>Security Services</h2>
+<div class="grid">
+<div class="card"><i class="fa fa-shield-halved"></i><h3>Security Guards</h3></div>
+<div class="card"><i class="fa fa-building"></i><h3>Corporate Security</h3></div>
+<div class="card"><i class="fa fa-industry"></i><h3>Industrial Security</h3></div>
+<div class="card"><i class="fa fa-house"></i><h3>Residential Security</h3></div>
+<div class="card"><i class="fa fa-user-secret"></i><h3>Bouncer Security</h3></div>
+</div>
+</section>
+
+<section class="section" id="manpower">
+<h2>Manpower Services</h2>
+<div class="grid">
+<div class="card"><i class="fa fa-users"></i><h3>Skilled Staff</h3></div>
+<div class="card"><i class="fa fa-broom"></i><h3>Housekeeping</h3></div>
+<div class="card"><i class="fa fa-screwdriver-wrench"></i><h3>Facility Support</h3></div>
+</div>
+</section>
+
+<section class="section dark" id="contact">
+<h2>Contact</h2>
+<div class="contact">
+<div>
+<form>
+<input placeholder="Full Name">
+<input placeholder="Phone">
+<textarea placeholder="Requirement"></textarea>
+<button class="btn">Send</button>
+</form>
+</div>
+<div>
+<p>Rewari Haryana</p>
+<p>+91 9996548851</p>
+</div>
+</div>
+</section>
+
+<footer>© PR ENTERPRISES</footer>
+
+<a class="whatsapp" href="https://wa.me/919996548851" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+function toggleMenu(){document.getElementById('menu').classList.toggle('show')}
+let slides=document.querySelectorAll('.slide');
+let i=0;
+setInterval(()=>{slides[i].classList.remove('active');i=(i+1)%slides.length;slides[i].classList.add('active');},4500);
+</script>
+
+</body>
+</html>
